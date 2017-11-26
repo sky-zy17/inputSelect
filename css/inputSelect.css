@@ -9,15 +9,18 @@
 	border : 1px;
 	/* float : right; */
 	position: absolute;
-	margin-left : 136px;
-	width : 18px;
+	/* margin-left : 136px; */
+	width: 18px;
+	/* width : 18px; */
 	overflow : hidden;
 	top: 0px;
 	right: -4px;
 }
 .inputSelect_select {
-	margin-left : -136px;
-	width: 154px;
+	/* margin-left : -136px; */
+	margin-left : -2px;
+	width: 20px;
+	/* width: 154px; */
 	height: 21.33px;
 }
 .inputSelect_box {

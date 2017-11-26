@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/inputSelect.css">
+	<title>可模糊查询的下拉选</title>
+</head>
+<body>
+	<div class="inputSelect_div" style="display: inline-block;">
+		<input type="text" id="test" class="inputSelect_input" autocomplete="off" />
+	</div>
+	<div style="display: inline-block;">
+		<input type="button" value="显示" onclick="showVal();">
+	</div>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/inputSelect.js"></script>
+	<script type="text/javascript">
+		//添加方法
+		// appendOption(inputId,value,text)
+		// inputId : 输入框id名称
+		// value ： 对应select的value
+		// text : 对应select的text
+		appendOption("test",1,"aaaaaaaa");
+		appendOption("test",2,"aaaabbbb");
+		appendOption("test",3,"aacccccc");
+		appendOption("test",4,"bbbbbbbb");
+		appendOption("test",5,"dddddddd");
+
+		function showVal(){
+			//获得方法
+			// new inputSelectUtil("text").getValue();//根据input的id名称获得value
+			// new inputSelectUtil("text").getText();//根据input的id名称获得text
+			var value = new inputSelectUtil("test").getValue();
+			var text = new inputSelectUtil("test").getText();
+			console.log(value+":"+text);
+		}
+
+
+	</script>
+</body>
+</html>
